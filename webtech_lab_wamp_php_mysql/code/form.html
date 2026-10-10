@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yeni Kayıt</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Yeni Kayıt (Insert)</h1>
+    <form action="secure/insert_secure.php" method="POST">
+      <label>Ad Soyad (Name)</label>
+      <input type="text" name="name" required/>
+
+      <label>E-posta (Email)</label>
+      <input type="email" name="email" required/>
+
+      <label>Mesaj (Message)</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">Kaydet</button>
+    </form>
+    <p class="small">Bu form güvenli sürüme (prepared statements) gönderir.</p>
+  </div>
+</body>
+</html>
